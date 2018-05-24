@@ -1,0 +1,13 @@
+#### client_credentials模式
+POST localhost:9999/open-api/v1/uaa/oauth2/token?grant_type=client_credentials&client_id=11002&client_secret=web
+
+
+###
+
+GET localhost:9999/uaa/user?username=18310811659?access_token=$2a$10$CH597apfF4HTgyAIdtE5YuJ05J0Wr.MXdQt8QfKEog.YtKE8pdKyS
+Content-Type : application/json;charset=UTF-8
+Authorization: Basic client secret
+Cache-Control : no-cache
+
+###
+OPTIONS http://api.zyou.cn/uaa/oauth/token?grant_type=password&username=13699218273&password=1qaz2wsx&clientId=web&secret=web

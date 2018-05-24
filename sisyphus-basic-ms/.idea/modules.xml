@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/thoth-basic-common/thoth-basic-common.iml" filepath="$PROJECT_DIR$/thoth-basic-common/thoth-basic-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-basic-entity/thoth-basic-entity.iml" filepath="$PROJECT_DIR$/thoth-basic-entity/thoth-basic-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-basic-ms.iml" filepath="$PROJECT_DIR$/thoth-basic-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-basic-service/thoth-basic-service.iml" filepath="$PROJECT_DIR$/thoth-basic-service/thoth-basic-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-basic-web/thoth-basic-web.iml" filepath="$PROJECT_DIR$/thoth-basic-web/thoth-basic-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-robot-common/thoth-robot-common.iml" filepath="$PROJECT_DIR$/thoth-robot-common/thoth-robot-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-robot-entity/thoth-robot-entity.iml" filepath="$PROJECT_DIR$/thoth-robot-entity/thoth-robot-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-robot-ms.iml" filepath="$PROJECT_DIR$/thoth-robot-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-robot-service/thoth-robot-service.iml" filepath="$PROJECT_DIR$/thoth-robot-service/thoth-robot-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thoth-robot-web/thoth-robot-web.iml" filepath="$PROJECT_DIR$/thoth-robot-web/thoth-robot-web.iml" />
+    </modules>
+  </component>
+</project>

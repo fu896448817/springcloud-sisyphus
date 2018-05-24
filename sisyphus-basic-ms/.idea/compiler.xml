@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="thoth-basic-common" />
+        <module name="thoth-basic-entity" />
+        <module name="thoth-basic-service" />
+        <module name="thoth-basic-web" />
+        <module name="thoth-robot-common" />
+        <module name="thoth-robot-entity" />
+        <module name="thoth-robot-ms-web" />
+        <module name="thoth-robot-service" />
+        <module name="thoth-robot-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="thoth-basic-common" target="1.8" />
+      <module name="thoth-basic-entity" target="1.8" />
+      <module name="thoth-basic-ms" target="1.8" />
+      <module name="thoth-basic-service" target="1.8" />
+      <module name="thoth-basic-web" target="1.8" />
+      <module name="thoth-robot-common" target="1.7" />
+      <module name="thoth-robot-entity" target="1.7" />
+      <module name="thoth-robot-ms" target="1.6" />
+      <module name="thoth-robot-ms-web" target="1.7" />
+      <module name="thoth-robot-service" target="1.7" />
+      <module name="thoth-robot-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

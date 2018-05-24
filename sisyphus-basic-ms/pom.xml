@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>sisyphus-parent</artifactId>
+        <groupId>com.prometheus</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <thoth-basic.version>0.0.1-SNAPSHOT</thoth-basic.version>
+        <start-class>com.prometheus.sisyphus.ThothBasicMsApplication</start-class>
+    </properties>
+
+    <artifactId>sisyphus-basic-ms</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>sisyphus-basic-ms</name>
+    <description>sisyphus-basic</description>
+
+
+    <modules>
+        <module>sisyphus-basic-entity</module>
+        <module>sisyphus-basic-service</module>
+        <module>sisyphus-basic-common</module>
+        <module>sisyphus-basic-web</module>
+    </modules>
+    <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>com.prometheus</groupId>-->
+            <!--<artifactId>sisyphus-dependencies</artifactId>-->
+            <!--<version>0.0.1-SNAPSHOT</version>-->
+            <!--<optional>true</optional>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>com.prometheus</groupId>
+            <artifactId>sisyphus-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--添加bus支持-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-bus-kafka</artifactId>-->
+        <!--</dependency>-->
+
+    </dependencies>
+    <developers>
+        <developer>
+            <name>sunliangliang</name>
+            <email>liangliang1259@gmail.com</email>
+            <organization>Liangzi-Tech</organization>
+        </developer>
+    </developers>
+
+</project>

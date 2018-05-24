@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.prometheus</groupId>
+	<artifactId>sisyphus</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>sisyphus-parent</module>
+		<module>sisyphus-common</module>
+		<module>sisyphus-dependencies</module>
+		<module>sisyphus-data-es</module>
+		<module>sisyphus-data-hbase</module>
+		<module>sisyphus-data-kafka</module>
+		<module>sisyphus-fastdfs</module>
+		<module>sisyphus-mongo</module>
+		<module>sisyphus-redis</module>
+		<module>sisyphus-test</module>
+	</modules>
+	<packaging>pom</packaging>
+
+	<name>sisyphus</name>
+	<description>sisyphus prometheus</description>
+
+	<scm>
+		<connection>scm:git:http://10.127.138.36/robot/sisyphus.git</connection>
+		<url>http://10.127.138.36/cs/sisyphus</url>
+		<developerConnection>scm:git:http://10.127.138.36/robot/sisyphus.git</developerConnection>
+	</scm>
+</project>

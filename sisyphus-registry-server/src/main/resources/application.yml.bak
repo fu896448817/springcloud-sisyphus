@@ -1,0 +1,12 @@
+server:
+  port: 7777
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://registry-server:${server.port}/eureka/
+  server:
+    enable-self-preservation: false
