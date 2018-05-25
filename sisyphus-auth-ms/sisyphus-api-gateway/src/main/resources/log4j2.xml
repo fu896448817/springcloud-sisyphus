@@ -3,7 +3,7 @@
 
     <Properties>
         <Property name="log-path">/Users/oker/Documents/personal/personal-projects/logs</Property>
-        <Property name="log-name">thoth-api-gateway</Property>
+        <Property name="log-name">sisyphus-api-gateway</Property>
     </Properties>
 
     <Appenders>

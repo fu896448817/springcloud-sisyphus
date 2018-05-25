@@ -3,8 +3,8 @@
 #spring.cloud.config.discovery.service-id=thoth-config-server
 management.security.enabled=false
 spring.cloud.config.label=v1.0.0
-spring.cloud.config.name=thoth-api-gateway
-spring.application.name=thoth-api-gateway
+spring.cloud.config.name=sisyphus-api-gateway
+spring.application.name=sisyphus-api-gateway
 spring.cloud.config.profile=${config.profile:dev}
 # ----------start logging configuration
 #logging.path=./logs
@@ -21,9 +21,6 @@ ribbon.ConnectTimeout=60000
 eureka.instance.prefer-ip-address=true
 hystrix.command.default.execution.timeout.enabled=true
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=60000
-#�Ƿ������Թ���
 zuul.retryable=true
-#ͬһ��Server���ԵĴ���(��ȥ�״�)
 ribbon.MaxAutoRetries=3
-#�л���ͬServer�Ĵ���
 ribbon.MaxAutoRetriesNextServer=0

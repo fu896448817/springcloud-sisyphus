@@ -29,7 +29,7 @@ import org.springframework.web.filter.CorsFilter;
 //@EnableDiscoveryClient
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
 @EnableJpaRepositories(repositoryBaseClass = WiselyRepositoryImpl.class)
-//@EnableEurekaClient
+@EnableEurekaClient
 //@EnableFeignClients
 // 后端服务不添加跨域支持
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})

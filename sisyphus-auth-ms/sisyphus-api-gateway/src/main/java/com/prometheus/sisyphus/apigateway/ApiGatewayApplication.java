@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
 //import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 //import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.web.filter.CorsFilter;
@@ -13,8 +16,8 @@ import org.springframework.web.filter.CorsFilter;
  * tommy
  */
 @SpringBootApplication
-//@EnableZuulProxy
-//@EnableDiscoveryClient
+@EnableZuulProxy
+@EnableEurekaClient
 @EnableOAuth2Sso
 // 后端服务不添加跨域支持
 @ComponentScan(
