@@ -16,6 +16,8 @@ public enum UaaErrorCode implements ErrorCode {
     DECRYPT_ERROR(3004, "解密错误！"),
     SEND_MSG_FAILED(3005, "发送短信失败！"),
     VALID_CODE_ERROR(3006, "校验验证码失败！"),
+    TOKEN_ERROR(3009, "TOKEN异常"),
+    PARAM_ERROR(3010, "inner auth error,miss client_id or client_secret"),
     BIZ_MSG_LIMIT(3007, "业务限流，您的操作过于频繁！");
 
     private final int code;

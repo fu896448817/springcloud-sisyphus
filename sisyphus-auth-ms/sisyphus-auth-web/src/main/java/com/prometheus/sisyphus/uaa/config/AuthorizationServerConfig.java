@@ -73,12 +73,12 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
             .and()
                 .withClient("webapp")
                 .scopes("xx")
-                .authorizedGrantTypes("implicit");
+                .authorizedGrantTypes("implicit","client_credentials");
     }
     private static class MyTokenEnhancer implements TokenEnhancer {
         @Override
         public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
-            logger.debug(":>>> MyTokenEnhancer enhance ");
+            logger.info(":>>> MyTokenEnhancer enhance ");
 //            Principal principal = (Principal)authentication.getPrincipal();
 //            final UaaUser user = uaaUserPrincipal
             Map<String, Object> additionalInfo = new HashMap<>();

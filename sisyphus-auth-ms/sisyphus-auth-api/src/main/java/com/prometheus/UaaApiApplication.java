@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 //import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 /**
@@ -40,7 +41,7 @@ public class UaaApiApplication {
         //不需要权限控制的URL
         @Override
         public void configure(WebSecurity web) throws Exception {
-            web.ignoring().antMatchers("/v1/rpc/**", "/swagger-ui.html", "/error", "/swagger-resources/**", "/v2/api-docs", "/v1/api/uaa/register/**","/v1/api/uaa/bootstrap");
+            web.ignoring().antMatchers("/swagger-ui.html", "/error", "/swagger-resources/**", "/v2/api-docs", "/v1/api/uaa/register/**","/v1/api/uaa/bootstrap");
         }
     }
 }

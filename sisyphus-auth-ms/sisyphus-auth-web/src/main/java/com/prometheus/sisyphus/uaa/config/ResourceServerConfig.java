@@ -21,7 +21,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .exceptionHandling()
                 .authenticationEntryPoint((request, response, authException) -> response.sendError(HttpServletResponse.SC_UNAUTHORIZED))
             .and()
-                .authorizeRequests().antMatchers("/oauth/**","/oauth2/**","/open-api/v1/uaa/oauth2/**").permitAll()
+                .authorizeRequests().antMatchers("/uaa/oauth2/**","/users/**","/open-api/v1/uaa/oauth2/*").permitAll()
                 .anyRequest().authenticated()
             .and()
                 .httpBasic();

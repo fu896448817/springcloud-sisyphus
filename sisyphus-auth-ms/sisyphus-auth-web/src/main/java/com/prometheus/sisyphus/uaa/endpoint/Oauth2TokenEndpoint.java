@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 import java.util.Map;
 
@@ -32,7 +33,7 @@ public class Oauth2TokenEndpoint {
     private RegisterService registerService;
     ///open-api/v1/uaa/oauth2/token
     @RequestMapping(method = RequestMethod.POST, value = "/open-api/v1/uaa/oauth2/token")
-    public Object getAccessToken(Principal principal,
+    public Object getAccessToken(HttpServletRequest request,Principal principal,
                                  @RequestParam Map<String, String> parameters) {
         logger.info(":>>> start getAccessToken");
         OauthToken oauthToken = new OauthToken();
